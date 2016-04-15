@@ -1,0 +1,28 @@
+<div >
+   
+    <ul class="menu">
+        <li>{{user}}</li>
+    </ul>
+    <table style="border:1px">
+        <tr>
+            <td style="width:150px; font-weight:bold"> Full Name </td>
+            <td style="width:200px; font-weight:bold"> Address </td>
+            <td style="width:200px; font-weight:bold"> Email </td>
+            <td style="width:50px; font-weight:bold"> Age </td>
+            <td style="width:80px; font-weight:bold"> Gender </td>
+            <td style="width:200px; font-weight:bold"> Education </td>
+        </tr>
+    </table>
+    <div ng-repeat="user in users">
+        <table style="border:1px">
+            <tr>
+                <td style="width:150px"> {{user.fullname}}</td>
+                <td style="width:200px"> {{user.address}}</td>
+                <td style="width:200px"> {{user.email}}</td>
+                <td style="width:50px"> {{user.age}}</td>
+                <td style="width:80px"> {{user.gender}}</td>
+                <td style="width:200px"> {{user.education}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
